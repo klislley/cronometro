@@ -57,24 +57,29 @@ body {
 }
 .buttons {
   margin-top: 40px;
-  width: 280px;
+  width: 350px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .buttons button {
   height: 45px;
-  width: 80px;
+  width: 100px;
   border-radius: 10px;
   background: transparent;
   border: 1px solid #fff;
   color: #fff;
   font-weight: 900;
   font-size: 18px;
-  box-shadow: 0 0 5px;
+  box-shadow: 0 0 5px #000000;
 }
 .buttons button:hover {
   background: #fff;
   color: #24769c;
   transition: 0.5s ease;
+}
+.buttons button.active,
+.buttons button.stopActive {
+  cursor: not-allowed;
+  opacity: 0.6;
 }
